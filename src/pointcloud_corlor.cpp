@@ -26,7 +26,6 @@ ros::Publisher pub;
 //设置100的队列大小
 queue<sensor_msgs::ImageConstPtr> img_vec;
 pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_out(new pcl::PointCloud<pcl::PointXYZRGB>);
-// cloud_out->resize(6000);
 //image imcallback
 void imageCallback( const sensor_msgs::CompressedImageConstPtr &img_msg){
      cv_bridge::CvImageConstPtr ptr;
